@@ -33,11 +33,11 @@ android {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            afterEvaluate{
+            afterEvaluate {
                 from(components["release"])
             }
+        }
     }
-}
 }
 
 
@@ -61,9 +61,9 @@ dependencies {
     api("androidx.localbroadcastmanager:localbroadcastmanager:1.1.0")
     api("androidx.room:room-runtime:2.6.1")
     api("androidx.room:room-ktx:2.6.1")
-    ksp ("androidx.room:room-compiler:2.6.1")
+    ksp("androidx.room:room-compiler:2.6.1")
     api("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5")
     api("com.google.android.flexbox:flexbox:3.0.0")
     api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
-    api(files("lib/izig_sdk_v1_new.aar"))
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 }

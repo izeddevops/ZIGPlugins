@@ -65,4 +65,5 @@ dependencies {
     api("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5")
     api("com.google.android.flexbox:flexbox:3.0.0")
     api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    implementation(files("lib/izig_sdk_v1_new.aar"))
 }

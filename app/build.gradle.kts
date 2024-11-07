@@ -64,6 +64,5 @@ dependencies {
     ksp ("androidx.room:room-compiler:2.6.1")
     api("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5")
     api("com.google.android.flexbox:flexbox:3.0.0")
-    api("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.14")
     api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
 }

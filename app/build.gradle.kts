@@ -65,5 +65,5 @@ dependencies {
     api("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5")
     api("com.google.android.flexbox:flexbox:3.0.0")
     api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    api(project(":zig_sdk"))
 }

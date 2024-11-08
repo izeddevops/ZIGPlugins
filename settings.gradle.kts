@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "ZIGPlugins"
 include(":app")
-include(":zig_sdk")
